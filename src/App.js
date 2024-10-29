@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ItemToDo from "./components/ItemToDo";
+
 import Header from "./components/Header";
 import ListToDo from "./components/ListToDo";
 import Title from "./components/Title";
@@ -16,7 +16,7 @@ const App = () => {
 
   const handleAddItem = () => {
     setItems((prev) => {
-      if (inputData != "")
+      if (inputData !== "")
         return [...prev, { label: inputData, status: false, id: Date.now() }];
       else return prev;
     });

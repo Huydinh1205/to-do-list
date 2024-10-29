@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const ItemToDo = ({ label, status, id, onChangeStatus, onRemoveItem }) => {
   return (
